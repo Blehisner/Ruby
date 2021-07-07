@@ -1,0 +1,20 @@
+puts "--------conversor segundos a minutos y horas--------"
+puts "ingrese segundos: "
+segundo = gets.chomp.to_i
+def conv (segundo)
+  min = segundo/60
+  hor = min/60
+  return min,hor
+end
+min, hor = conv(segundo)
+puts "son #{min} minutos o #{hor} horas"
+puts "--------conversor bolivianos a dolares y euros--------"
+puts "ingrese monto en bolivianos: "
+bs= gets.chomp.to_f
+def convM bs
+  dolar = bs/6.90
+  euro = bs/8.14
+  return dolar, euro
+end
+dolar, euro = convM(bs)
+puts "son #{dolar} dolares o #{euro} euros"
