@@ -1,0 +1,17 @@
+puts "------------Celsius a Fahrenheit----------------"
+puts "inserte grados Celsius"
+celsius = gets.chomp.to_f
+puts "#{celsius} grados celsius son:"
+def fahrenheit (celsius)
+  fahrenheit = (((9* celsius)/5)+32)
+end
+print fahrenheit celsius; puts " grados fahrenheit"
+
+puts "------------Fahrenheit a Celius----------------"
+puts "inserte grados fahrenheit"
+f = gets.chomp.to_f
+puts "#{f} grados fahrenheit son:"
+def celsius (f)
+  c = (5*(f - 32))/9
+end
+print celsius f ;print " grados celsius"
