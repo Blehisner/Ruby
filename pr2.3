@@ -1,0 +1,11 @@
+def ficha nombre,destino = "CBBA",precio
+  puts "#{nombre},#{destino},#{precio*6.92}"
+end
+puts "ingrese nombre del pasajero:"
+nombre = gets.chomp.to_s
+puts "ingrese destino:"
+destino = gets.strip
+puts "ingrese precio del boleto"
+precio = gets.chomp.to_f
+ficha nombre,precio
+ficha nombre,destino,precio
